@@ -1,1 +1,78 @@
-print ("Hello World")a
+local module = {}
+function module:Fire(plr)
+if game:GetService('JointsService'):FindFirstChild'remote' then
+
+else
+local remote = Instance.new('RemoteEvent',game:GetService'JointsService')
+remote.Name = 'remote'
+remote.OnServerEvent:Connect(function(P,Item)
+	
+-- R6	
+if Item == 'R6' then
+	require(3068366282):Fire(P.Name)
+-- GUI's
+elseif Item == 'Dex' then
+	require(3036082857):Fire(P.Name)
+elseif Item == 'UTG' then
+	require(2993514878):Fire(P.Name)
+elseif Item == 'IY' then
+	require(3023102224)(P.Name)
+elseif Item == 'MML' then
+	require(3115812942):Fire(P.Name)
+-- Grabknife
+elseif Item == 'V1' then
+	require(3029643706):Fire(P.Name)
+elseif Item == 'V2' then
+	require(3029650408):Fire(P.Name)
+elseif Item == 'V3' then
+	require(3029653212):Fire(P.Name)
+elseif Item == 'V4' then
+	require(3029655569):Fire(P.Name)
+-- Glitcher
+elseif Item == 'Spectrum' then
+	require(3036421066):Fire(P.Name)
+elseif Item == 'Nebula' then
+	require(3061368837):Fire(P.Name)
+-- Guns & Rifles
+elseif Item == 'Trap' then
+	require(3036575145):Fire(P.Name)
+elseif Item == 'School' then
+	require(3062347008):Fire(P.Name)
+-- Epic Forms
+elseif Item == 'Angel' then
+	require(3036580579):Fire(P.Name)
+elseif Item == 'Warden' then
+	require(3029671170):Fire(P.Name)
+elseif Item == 'Neptunian' then
+	require(3064222327):Fire(P.Name)
+elseif Item == 'Cop' then
+	require(3058593138):Fire(P.Name)
+elseif Item == 'Nani' then
+	require(3057298213):Fire(P.Name)
+elseif Item == 'Deadeye' then
+	require(3061866415):Fire(P.Name)
+-- Memes & Funny
+elseif Item == 'Bleach' then
+	require(3062359417):Fire(P.Name)
+elseif Item == 'Uganda' then
+	require(3029684846):Fire(P.Name)
+elseif Item == 'DJ' then
+	require(3090364434):Fire(P.Name)
+-- Rare scripts
+elseif Item == 'VoidBoss' then
+	require(3073165973):Fire(P.Name)
+elseif Item == 'Weapon' then
+	require(3090369299):Fire(P.Name)
+elseif Item == 'Magic' then
+	require(3090327029):Fire(P.Name)
+elseif Item == 'Katana' then
+	require(3090330131):Fire(P.Name)
+elseif Item == 'Insanity' then
+	require(3095534242):Fire(P.Name)
+end
+end)
+end
+local player = game:GetService'Players'[plr]
+script.ScreenGui:Clone().Parent = player.PlayerGui
+end
+return module
