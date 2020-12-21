@@ -1,5 +1,3 @@
---made by Dennismontly
-
 -- Instances:
 
 local FirstScript = Instance.new("ScreenGui")
